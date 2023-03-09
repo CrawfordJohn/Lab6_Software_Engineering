@@ -1,3 +1,8 @@
+"""
+Author: John Crawford
+Lab 6: Software Engineering
+"""
+
 def print_menu():
     print('Menu')
     print('-------------')
