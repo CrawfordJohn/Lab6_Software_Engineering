@@ -11,9 +11,9 @@ def encode(password):
     encoded_password = ''
     for digit in password:
         if int(digit) >= 7:
-            encoded_password += str(int(digit) += 3)[-1]
+            encoded_password += str(int(digit) + 3)[-1]
         else:
-            encoded_password += str(int(digit) += 3)
+            encoded_password += str(int(digit) + 3)
     return encoded_password
 
 def main():
@@ -23,7 +23,8 @@ def main():
 
         if user_input == '1':
             password = input('Please enter your password to encode: ')
-            print(encode(password))
+            encoded_password = encode(password)
+            print(encoded_password)
             print('Your password has been encoded and stored! \n')
 
         elif user_input == '2':
